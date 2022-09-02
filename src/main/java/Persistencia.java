@@ -34,4 +34,17 @@ public class Persistencia {
 		}
 		return lista;
 	}	
+	
+	
+	public boolean isValid(String name) {
+		return name.matches("^([A-Z]?[a-z]{2}[ ]?){1,}$");
+	}
+	
+	public boolean isNumber(String number) {
+		return number.matches("^[0-9]+$");
+	}
+	
+	public boolean isNumberDecimal(String number) {
+		return number.matches("^[0-9]+[.]?[0-9]*");
+	}
 }
